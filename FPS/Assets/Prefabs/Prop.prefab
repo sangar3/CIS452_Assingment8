@@ -4848,6 +4848,33 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!65 &6175945919497770068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348779092344044043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.87152433, y: 0.23632368, z: 0.0333694}
+  m_Center: {x: -0.11630303, y: -0.033833604, z: -0.0000000055879386}
+--- !u!114 &3676467562341048632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348779092344044043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195b18911eb614c44bd3e81f187718ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickedupgun: {fileID: 0}
+  oldgun: {fileID: 0}
 --- !u!1 &5348779092444150567
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +4983,12 @@ PrefabInstance:
       objectReference: {fileID: 4300000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
+--- !u!1 &5348779092344044043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5348779092343946411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5348779092344071723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc,
