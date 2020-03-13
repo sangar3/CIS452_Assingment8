@@ -10,7 +10,8 @@ public class Gun : MonoBehaviour
     public float fireRate = 15f;
     public float impactforce = 30f;
     private float nextTimeToFire = 0f;
-
+   
+    
     public int maxAmmo = 10;
     public Text maxAmmotext;
     private int currentAmmo;
@@ -25,13 +26,17 @@ public class Gun : MonoBehaviour
     public GameObject impacteffect;
     public Camera fpsCam;
     public Animator animator;
-
+    public GameObject ReloadingText;
+    public GameObject PlayerCrosshair;
    
+
     void Start()
     {
         currentAmmo = maxAmmo;
+        
         CurrentAmmotext.text = currentAmmo.ToString();
         maxAmmotext.text = maxAmmo.ToString();
+       
     }
 
 
@@ -68,6 +73,8 @@ public class Gun : MonoBehaviour
     {
         isReloading = true;
         Debug.Log("reloading..");
+        PlayerCrosshair.SetActive(false);
+        ReloadingText.SetActive(true);
         animator.SetBool("Reloading",true);
         yield return new WaitForSeconds(reloadTime -.25f);  //time it takes to reload
         animator.SetBool("Reloading", false);
@@ -77,6 +84,8 @@ public class Gun : MonoBehaviour
         CurrentAmmotext.text = currentAmmo.ToString();
         maxAmmotext.text = maxAmmo.ToString();
         isReloading = false;
+        ReloadingText.SetActive(false);
+        PlayerCrosshair.SetActive(true);
     }
     void Shoot()
     {
@@ -91,7 +100,7 @@ public class Gun : MonoBehaviour
             Target target = hit.transform.GetComponent<Target>();
             if(target != null)
             {
-                target.TakeDamage(damage);
+                target.TakeDamage(damage); //calls take damage from target
             }
 
             if(hit.rigidbody != null)
