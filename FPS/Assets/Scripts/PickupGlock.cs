@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (PickupGlock.cs)
+		 * (Assignment)
+		 * (The concrete class of the main superclass)
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

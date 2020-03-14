@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (PickupSuperClass.cs)
+		 * (Assignment)
+		 * (The main abstract superclass to define the temp method)
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
