@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &2284689830510223657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16652526774488950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0723195, y: 0.23632368, z: 1.4976444}
+  m_Center: {x: -0.01590538, y: -0.033833608, z: -0.0094537735}
 --- !u!1 &16652526809583194
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,8 +132,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.04990776e+12, y: 4.232115e+21, z: 0.00087126275,
-    w: 1.0196762e+22}
+  m_BoundingSphereOverride: {x: 0, y: Infinity, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4879,33 +4891,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!65 &2284689830510223657
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16652526774488950}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0723195, y: 0.23632368, z: 1.4976444}
-  m_Center: {x: -0.01590538, y: -0.033833608, z: -0.0094537735}
---- !u!114 &8720350521177134149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16652526774488950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 195b18911eb614c44bd3e81f187718ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickedupgun: {fileID: 0}
-  oldgun: {fileID: 0}
 --- !u!1001 &16652526774389206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4919,11 +4904,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.39
+      value: 2.86
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5060,7 +5045,7 @@ PrefabInstance:
     - target: {fileID: 4894355084748368818, guid: ff40d24f03fd8af41ad692782fda69ea,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.71
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4894355084748368818, guid: ff40d24f03fd8af41ad692782fda69ea,
         type: 3}

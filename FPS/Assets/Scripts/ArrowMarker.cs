@@ -8,6 +8,8 @@ public class ArrowMarker : MonoBehaviour
     public GameObject Quest1;
     public GameObject Quest2;
     public GameObject Quest3;
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
